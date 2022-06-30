@@ -5,8 +5,8 @@
         <title>To Do List</title>
     </head>
     <body>
-        <h1>오늘하루도열심히</h1>
-        <div><input type="button" value="To Do" onclick="myFuction()"></div>
+        <h1>오늘하루도열심히</h1> 
+        <div><input id="myDiv" type="button" value="To Do" onclick="myFuction()"></div>
     </body>
     <script>
         function myFuction() {
@@ -16,6 +16,12 @@
             var t = document.createElement('INPUT');
             t.setAttribute('type','text');
             document.body.appendChild(t);
+            // var div = document.getElementById("myDiv");
+            // var i;
+            // for (i = 1; i < div.length; i++) {
+            //     var newElem = document.createElement("br");
+            //     div.insertBefore(newElem, div[i]);
+            // }
         }
     </script>
 </html>
