@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>낮과 밤</title>
+        <style>
+            .nt {
+                color: blue;
+                font-weight: bold;
+            }
+            #two {
+                color: powderblue;
+            }
+            #three {
+                color: orange;
+            }
+            #four {
+                color: red;
+            }
+            #five {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>낮과 밤</h1>
+        <input type="button" value="day" onclick="
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+        ">
+        <input type="button" value="night" onclick="
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+        ">
+        <p><span id="one" class="nt">밤</span>엔 캄캄한 어둠속이라 어디가 <span id="two" class="nt">하늘</span>이고 어디가 <span id="three" class="nt">땅</span>인지 빛나는게 불빛인지 별빛인지 분간이 안가. 내가 가려는 곳은 어디일까 <span id="four" class="nt">천국</span>일까 <span id="five" class="nt">지옥</span>일까</p>
+        <input type="button" value="출처" onclick="myFunction()">
+
+    <script>
+        function myFunction() {
+            var x = document.createElement('h1');
+            var t = document.createTextNode('드라마 나쁜남자');
+            x.appendChild(t);
+            document.body.appendChild(x);
+        }
+    </script>
+    </body>
+</html>
